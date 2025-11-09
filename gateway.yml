@@ -1,0 +1,20 @@
+networks:
+  devpulse:
+    external: true
+services:
+  api:
+    container_name: devpulse_gateway_api
+    image: 124305488399.dkr.ecr.us-east-1.amazonaws.com/devpulse/gateway:1.0.0
+    environment:
+      MYSQL_PORT: 3306
+      MYSQL_HOST: devpulse_db
+      MYSQL_USER: devpulse
+      MYSQL_PASSWORD: devpulse
+      EUREKA_URL: http://devpulse-eureka:8761/eureka/
+      FRONTEND_URL: http://localhost:3000
+      HOST: api
+      TZ: Asia/Kolkata
+    ports:
+      - "8090:8090"
+    networks:
+      - devpulse

@@ -1,0 +1,16 @@
+networks:
+  devpulse:
+    external: true
+services:
+  db:
+    container_name: devpulse_db
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: devpulsedb
+      MYSQL_USER: devpulse
+      MYSQL_PASSWORD: devpulse
+      MYSQL_ROOT_PASSWORD: devpulse
+    ports:
+      - "3307:3306"
+    networks:
+      - devpulse
