@@ -12,6 +12,9 @@ services:
       MYSQL_PASSWORD: devpulse
       EUREKA_URL: http://devpulse-eureka:8761/eureka/
       FRONTEND_URL: http://localhost:3000
+      CLIENT_ID: Ov23lisIpW5iDD0fN41z # Ov23li2dYB8rhSWxihkb
+      CLIENT_SECRET: fb77661200b363f1a3697ab99a004528e9e7a141 # c1ec439d98cd8389b00d47fee8dc9a42a9173cb1
+      REDIRECT_URI: https://salonisingh.in/api/github/auth/callback # http://localhost:8081/api/github/auth/callback
       HOST: api
       TZ: Asia/Kolkata
     ports:

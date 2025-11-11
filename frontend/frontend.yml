@@ -6,8 +6,7 @@ services:
     container_name: devpulse_frontend
     image: 124305488399.dkr.ecr.us-east-1.amazonaws.com/devpulse/ui:1.0.0
     environment:
-      API_PORT: 8090
-      API_HOST: gateway
+      REACT_APP_URL: https://salonisingh.in
     ports:
       - "3000:3000"
     networks:
