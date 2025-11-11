@@ -11,7 +11,7 @@ services:
       MYSQL_USER: devpulse
       MYSQL_PASSWORD: devpulse
       EUREKA_URL: http://devpulse-eureka:8761/eureka/
-      FRONTEND_URL: http://localhost:3000
+      FRONTEND_URL: https://salonisingh.in
       HOST: api
       TZ: Asia/Kolkata
     ports:
